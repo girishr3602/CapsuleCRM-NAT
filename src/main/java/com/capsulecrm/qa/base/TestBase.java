@@ -38,34 +38,48 @@ public class TestBase {
 	
 	public static void initialization() {
 		
-		System.out.println(System.getProperty("os.name").toLowerCase());
-		System.out.println(System.getProperty("user.dir"));
+		String OS_NAME = System.getProperty("os.name").toLowerCase();
+		System.out.println(OS_NAME);
 		
-		switch(prop.getProperty("browser")){
-		case "chrome":
-			
-			if(System.getProperty("os.name").contains("windows")) {
+		if(OS_NAME.contains("windows")) {
+			switch(prop.getProperty("browser")){
+			case "chrome":
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/chromedriver.exe");
 				driver = new ChromeDriver();
+				break;
 				
-			}else if (System.getProperty("os.name").contains("mac")) {
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/chromedriver");
-				driver = new ChromeDriver();
+			case "firefox":
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/geckodriver.exe");
+				driver = new FirefoxDriver();
+				break;
+				
+			case "opera":
+				System.setProperty("webdriver.opera.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/operadriver.exe");
+				driver = new OperaDriver();
+				break;
 				
 			}
-			break;
 			
-		case "firefox":
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/geckodriver.exe");
-			driver = new FirefoxDriver();
-			break;
-			
-		case "opera":
-			System.setProperty("webdriver.opera.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/operadriver.exe");
-			driver = new OperaDriver();
-			break;
-			
+		}else if(OS_NAME.contains("mac")) {
+			switch(prop.getProperty("browser")){
+			case "chrome":
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/chromedriver");
+				driver = new ChromeDriver();
+				break;
+				
+			case "firefox":
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/geckodriver");
+				driver = new FirefoxDriver();
+				break;
+				
+			case "opera":
+				System.setProperty("webdriver.opera.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/operadriver");
+				driver = new OperaDriver();
+				break;
+				
+			}
 		}
+		
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 28 17:31:35 IST 2019</td>
+<td>Started on:</td><td>Tue May 28 18:07:15 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (164 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (359 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,8 +76,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.capsulecrm.qa.testcases.TestRun.setUp()'><b>setUp</b><br>Test class: com.capsulecrm.qa.testcases.TestRun</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:70)
+<td><div><pre>java.lang.IllegalStateException: The driver is not executable: /Users/homebit/eclipse-workspace/CapsuleCRM-NAT/src/main/java/com/capsulecrm/qa/drivers/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:67)
 	at com.capsulecrm.qa.testcases.TestRun.setUp(TestRun.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -107,9 +115,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace963110412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace963110412'><pre>java.lang.NullPointerException
-	at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:70)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1297978429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1297978429'><pre>java.lang.IllegalStateException: The driver is not executable: /Users/homebit/eclipse-workspace/CapsuleCRM-NAT/src/main/java/com/capsulecrm/qa/drivers/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:67)
 	at com.capsulecrm.qa.testcases.TestRun.setUp(TestRun.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -165,8 +181,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.capsulecrm.qa.testcases.TestRun.testRun()'><b>testRun</b><br>Test class: com.capsulecrm.qa.testcases.TestRun</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:70)
+<td><div><pre>java.lang.IllegalStateException: The driver is not executable: /Users/homebit/eclipse-workspace/CapsuleCRM-NAT/src/main/java/com/capsulecrm/qa/drivers/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:67)
 	at com.capsulecrm.qa.testcases.TestRun.setUp(TestRun.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -196,9 +220,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2061347276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2061347276'><pre>java.lang.NullPointerException
-	at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:70)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1223867739", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1223867739'><pre>java.lang.IllegalStateException: The driver is not executable: /Users/homebit/eclipse-workspace/CapsuleCRM-NAT/src/main/java/com/capsulecrm/qa/drivers/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:67)
 	at com.capsulecrm.qa.testcases.TestRun.setUp(TestRun.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

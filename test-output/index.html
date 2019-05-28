@@ -128,8 +128,16 @@
                   <a name="testRun">
                   </a> <!-- testRun -->
                   <span class="method-name">testRun</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:70)
+                  <div class="stack-trace">java.lang.IllegalStateException: The driver is not executable: /Users/homebit/eclipse-workspace/CapsuleCRM-NAT/src/main/java/com/capsulecrm/qa/drivers/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:67)
 	at com.capsulecrm.qa.testcases.TestRun.setUp(TestRun.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -168,7 +176,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/73/7h96x39d3cx8h2hp982165s40000gn/T/testng-eclipse-928241023/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/73/7h96x39d3cx8h2hp982165s40000gn/T/testng-eclipse--521259157/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -261,7 +269,7 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testRun</span>
-                <span class="method-start">-1559044895918 ms</span>
+                <span class="method-start">-1559047035629 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
