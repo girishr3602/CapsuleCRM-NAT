@@ -38,10 +38,21 @@ public class TestBase {
 	
 	public static void initialization() {
 		
+		System.out.println(System.getProperty("os.name").toLowerCase());
+		System.out.println(System.getProperty("user.dir"));
+		
 		switch(prop.getProperty("browser")){
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/chromedriver.exe");
-			driver = new ChromeDriver();
+			
+			if(System.getProperty("os.name").contains("windows")) {
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/chromedriver.exe");
+				driver = new ChromeDriver();
+				
+			}else if (System.getProperty("os.name").contains("mac")) {
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/java/com/capsulecrm/qa/drivers/chromedriver");
+				driver = new ChromeDriver();
+				
+			}
 			break;
 			
 		case "firefox":

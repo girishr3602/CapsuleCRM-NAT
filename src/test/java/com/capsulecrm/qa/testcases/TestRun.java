@@ -12,7 +12,7 @@ public class TestRun extends TestBase {
 		super();
 	}
 	
-	//@BeforeMethod
+	@BeforeMethod
 	public void setUp() {
 		initialization();
 	}
@@ -20,6 +20,7 @@ public class TestRun extends TestBase {
 	@Test
 	public void testRun() {
 		String OS_NAME = System.getProperty("os.name");
+		System.out.println(OS_NAME);
 		if(OS_NAME.contains("Windows")) {
 			
 			System.out.println("Opearating System is : " + OS_NAME);
@@ -29,7 +30,7 @@ public class TestRun extends TestBase {
 
 	}
 	
-	//@AfterMethod
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
