@@ -60,16 +60,6 @@ public class TestBase {
 				
 			}
 			
-			/*
-			 * driver.manage().window().maximize(); driver.manage().deleteAllCookies();
-			 * driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICIT_WAIT,
-			 * TimeUnit.SECONDS);
-			 * driver.manage().timeouts().implicitlyWait(TestUtil.PAGE_LOAD_TIMEOUT,
-			 * TimeUnit.SECONDS);
-			 * 
-			 * driver.get(prop.getProperty("loginurl"));
-			 */
-			
 		}else if(OS_NAME.contains("mac")) {
 			switch(prop.getProperty("browser")){
 			case "chrome":
