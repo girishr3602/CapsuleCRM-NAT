@@ -1,115 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-05-28T12:37:15Z" name="Default suite" finished-at="2019-05-28T12:37:15Z" duration-ms="359">
+  <suite name="Default suite" duration-ms="7656" started-at="2019-05-30T11:41:41Z" finished-at="2019-05-30T11:41:49Z">
     <groups>
     </groups>
-    <test started-at="2019-05-28T12:37:15Z" name="Default test" finished-at="2019-05-28T12:37:15Z" duration-ms="359">
+    <test name="Default test" duration-ms="7656" started-at="2019-05-30T11:41:41Z" finished-at="2019-05-30T11:41:49Z">
       <class name="com.capsulecrm.qa.testcases.TestRun">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.capsulecrm.qa.testcases.TestRun@55040f2f]" started-at="2019-05-28T12:37:15Z" name="setUp" finished-at="2019-05-28T12:37:15Z" duration-ms="239" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver is not executable: /Users/homebit/eclipse-workspace/CapsuleCRM-NAT/src/main/java/com/capsulecrm/qa/drivers/chromedriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver is not executable: /Users/homebit/eclipse-workspace/CapsuleCRM-NAT/src/main/java/com/capsulecrm/qa/drivers/chromedriver
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:67)
-at com.capsulecrm.qa.testcases.TestRun.setUp(TestRun.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.capsulecrm.qa.testcases.TestRun@d8355a8]" name="setUp" is-config="true" duration-ms="7321" started-at="2019-05-30T11:41:41Z" finished-at="2019-05-30T11:41:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRun()[pri:0, instance:com.capsulecrm.qa.testcases.TestRun@55040f2f]" started-at="2019-05-28T12:37:15Z" name="testRun" finished-at="2019-05-28T12:37:15Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver is not executable: /Users/homebit/eclipse-workspace/CapsuleCRM-NAT/src/main/java/com/capsulecrm/qa/drivers/chromedriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver is not executable: /Users/homebit/eclipse-workspace/CapsuleCRM-NAT/src/main/java/com/capsulecrm/qa/drivers/chromedriver
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at com.capsulecrm.qa.base.TestBase.initialization(TestBase.java:67)
-at com.capsulecrm.qa.testcases.TestRun.setUp(TestRun.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method status="PASS" signature="testRun()[pri:0, instance:com.capsulecrm.qa.testcases.TestRun@d8355a8]" name="testRun" duration-ms="16" started-at="2019-05-30T11:41:49Z" finished-at="2019-05-30T11:41:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRun -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.capsulecrm.qa.testcases.TestRun@55040f2f]" started-at="2019-05-28T12:37:15Z" name="tearDown" finished-at="2019-05-28T12:37:15Z" duration-ms="0" status="SKIP">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.capsulecrm.qa.testcases.TestRun@d8355a8]" name="tearDown" is-config="true" duration-ms="246" started-at="2019-05-30T11:41:49Z" finished-at="2019-05-30T11:41:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -20,9 +20,9 @@ public class TestRun extends TestBase {
 	@Test
 	public void testRun() {
 		String OS_NAME = System.getProperty("os.name");
+		
 		System.out.println(OS_NAME);
 		if(OS_NAME.contains("Windows")) {
-			
 			System.out.println("Opearating System is : " + OS_NAME);
 		}else if(OS_NAME.contains("Linux")) {
 			System.out.println("Opearating System is : " + OS_NAME);
