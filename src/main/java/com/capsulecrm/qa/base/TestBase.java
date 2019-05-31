@@ -39,7 +39,7 @@ public class TestBase {
 	public static void initialization() {
 		
 		String OS_NAME = System.getProperty("os.name").toLowerCase();
-		System.out.println(OS_NAME);
+		//System.out.println(OS_NAME);
 		
 		if(OS_NAME.contains("windows")) {
 			switch(prop.getProperty("browser")){

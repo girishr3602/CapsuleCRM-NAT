@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.capsulecrm.qa.testcases.TestRun">
+      <class name="com.capsulecrm.qa.testcases.AddPerson_Test">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testRun"/>
+          <include name="tearDown"/>
+          <include name="addNewPerson"/>
         </methods>
-      </class> <!-- com.capsulecrm.qa.testcases.TestRun -->
+      </class> <!-- com.capsulecrm.qa.testcases.AddPerson_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
