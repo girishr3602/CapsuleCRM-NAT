@@ -2,20 +2,52 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9073" started-at="2019-05-31T16:21:59Z" finished-at="2019-05-31T16:22:08Z">
+  <suite name="Default suite" duration-ms="9701" started-at="2019-06-01T20:09:16Z" finished-at="2019-06-01T20:09:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9073" started-at="2019-05-31T16:21:59Z" finished-at="2019-05-31T16:22:08Z">
+    <test name="Default test" duration-ms="9701" started-at="2019-06-01T20:09:16Z" finished-at="2019-06-01T20:09:26Z">
       <class name="com.capsulecrm.qa.testcases.AddPerson_Test">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@224edc67]" name="setUp" is-config="true" duration-ms="7762" started-at="2019-05-31T16:21:59Z" finished-at="2019-05-31T16:22:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@71423665]" name="setUp" is-config="true" duration-ms="7598" started-at="2019-06-01T20:09:16Z" finished-at="2019-06-01T20:09:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addNewPerson()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@224edc67]" name="addNewPerson" duration-ms="724" started-at="2019-05-31T16:22:07Z" finished-at="2019-05-31T16:22:08Z">
+        <test-method status="PASS" signature="addNewPerson(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@71423665]" name="addNewPerson" duration-ms="1163" started-at="2019-06-01T20:09:24Z" data-provider="getNewUserData" finished-at="2019-06-01T20:09:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstname_xls]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lastname_xls]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[tags_xls]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[+91-9876543210]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[test@dataprovider.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewPerson -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@224edc67]" name="tearDown" is-config="true" duration-ms="569" started-at="2019-05-31T16:22:08Z" finished-at="2019-05-31T16:22:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@71423665]" name="tearDown" is-config="true" duration-ms="594" started-at="2019-06-01T20:09:25Z" finished-at="2019-06-01T20:09:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
