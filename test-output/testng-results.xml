@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8130" started-at="2019-06-01T07:47:17Z" finished-at="2019-06-01T07:47:25Z">
+  <suite name="Default suite" duration-ms="9632" started-at="2019-06-01T14:25:49Z" finished-at="2019-06-01T14:25:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8130" started-at="2019-06-01T07:47:17Z" finished-at="2019-06-01T07:47:25Z">
+    <test name="Default test" duration-ms="9632" started-at="2019-06-01T14:25:49Z" finished-at="2019-06-01T14:25:59Z">
       <class name="com.capsulecrm.qa.testcases.AddPerson_Test">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@3e6fa38a]" name="setUp" is-config="true" duration-ms="7135" started-at="2019-06-01T07:47:17Z" finished-at="2019-06-01T07:47:24Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@71423665]" name="setUp" is-config="true" duration-ms="8020" started-at="2019-06-01T14:25:49Z" finished-at="2019-06-01T14:25:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addNewPerson(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@3e6fa38a]" name="addNewPerson" duration-ms="628" started-at="2019-06-01T07:47:24Z" data-provider="getNewUserData" finished-at="2019-06-01T07:47:25Z">
+        <test-method status="PASS" signature="addNewPerson(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@71423665]" name="addNewPerson" duration-ms="669" started-at="2019-06-01T14:25:57Z" data-provider="getNewUserData" finished-at="2019-06-01T14:25:58Z">
           <params>
             <param index="0">
               <value>
@@ -47,6 +47,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewPerson -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@71423665]" name="tearDown" is-config="true" duration-ms="591" started-at="2019-06-01T14:25:58Z" finished-at="2019-06-01T14:25:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.capsulecrm.qa.testcases.AddPerson_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

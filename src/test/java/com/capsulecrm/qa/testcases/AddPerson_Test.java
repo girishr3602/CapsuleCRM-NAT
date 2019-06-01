@@ -1,5 +1,6 @@
 package com.capsulecrm.qa.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -19,6 +20,8 @@ public class AddPerson_Test extends TestBase{
 	PeopleAndOrganisationsPage pop;
 	NewPersonPage npp;
 	
+	Logger log = Logger.getLogger("AddPerson_Test");
+	
 	public AddPerson_Test() {
 		super();
 		
@@ -27,9 +30,13 @@ public class AddPerson_Test extends TestBase{
 	@BeforeMethod
 	public void setUp() {
 		initialization();
+		log.info("Initialized Driver");
 		lp = new LoginPage();
+		log.info("Initialized Login Page");
 		lp.login();
+		log.info("Logged In successfully");
 		hp = new HomePage();
+		log.info("Initialized Home page");
 		
 	}
 	
@@ -43,8 +50,10 @@ public class AddPerson_Test extends TestBase{
 	public void addNewPerson(String title, String firstname, String lastname, String tags, String phonenumber, String emailaddresses) {
 		
 		hp.clickOnPeopleAndOrganisations();
+		log.info("Click on People Icons");
 		pop = new PeopleAndOrganisationsPage();
 		pop.verifyPOTitleVisibility();
+		log.info("Validate People and Organisations page");
 		
 		/*
 		 * pop.clickAddPerson();
@@ -67,7 +76,7 @@ public class AddPerson_Test extends TestBase{
 		//System.out.println(data[2]);
 	}
 		
-	//@AfterMethod
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
