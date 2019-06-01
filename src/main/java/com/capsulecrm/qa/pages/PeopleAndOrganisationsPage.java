@@ -1,5 +1,8 @@
 package com.capsulecrm.qa.pages;
 
+import java.util.Iterator;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,7 +15,7 @@ public class PeopleAndOrganisationsPage extends TestBase {
 	public PeopleAndOrganisationsPage() {
 		PageFactory.initElements(driver, this);
 	}
-
+	
 	/* Object Repository */
 	@FindBy (xpath ="//*[@class='page-header-title']")
 	WebElement peoplePageTitle;
@@ -26,8 +29,8 @@ public class PeopleAndOrganisationsPage extends TestBase {
 	@FindBy (xpath = "//*[contains(text(),'Import')]")
 	WebElement importButton;
 	
-	@FindBy (id = "ember88")
-	WebElement personname;
+	@FindBy (xpath = "//*[@class='tooltipper list-results-row ember-view']/td[3]")
+	List <WebElement> personnameList;
 	
 	/*Methods -- Actions*/
 	public String verifyPeopleAndOrganisationsURL() {
@@ -44,8 +47,24 @@ public class PeopleAndOrganisationsPage extends TestBase {
 		return new NewPersonPage();
 	}
 	
-	public String verifyPersonAdded(String personName) {
-		return personname.getText();
+	public void verifyPersonAdded(String firstname, String lastname) {
+		//System.out.println(personnameList.size());
+		String personName = firstname + " " + lastname;
+		
+		Iterator <WebElement> nameIterator = personnameList.iterator();
+		
+		if(nameIterator.hasNext()) {
+			for(int i=0; i<personnameList.size(); i++) {
+				nameIterator.next();
+				//System.out.println(personnameList.get(i).getText().contains(personName));
+				
+				if(personnameList.get(i).getText().contains(personName)) {
+					//System.out.println("Person Name Present");
+					break;
+				}
+				
+			}
+		}
 		
 	}
 	

@@ -13,6 +13,8 @@ import com.capsulecrm.qa.pages.NewPersonPage;
 import com.capsulecrm.qa.pages.PeopleAndOrganisationsPage;
 import com.capsulecrm.qa.util.TestUtil;
 
+import junit.framework.Assert;
+
 public class AddPerson_Test extends TestBase{
 
 	LoginPage lp;
@@ -43,26 +45,29 @@ public class AddPerson_Test extends TestBase{
 	@DataProvider
 	public Object[][] getNewUserData() {
 		Object data[][] = TestUtil.getTestData(prop.getProperty("sheetname"));
+		log.info("Read Data Successfully");
 		return data;
 	}
 	
 	@Test (dataProvider = "getNewUserData")
 	public void addNewPerson(String title, String firstname, String lastname, String tags, String phonenumber, String emailaddresses) {
-		
 		hp.clickOnPeopleAndOrganisations();
 		log.info("Click on People Icons");
 		pop = new PeopleAndOrganisationsPage();
 		pop.verifyPOTitleVisibility();
 		log.info("Validate People and Organisations page");
 		
+		
+		
 		/*
-		 * pop.clickAddPerson();
-		 * 
-		 * npp = new NewPersonPage(); npp.addNewPerson(title, firstname, lastname, tags,
-		 * phonenumber, emailaddresses);
+		 * pop.clickAddPerson(); npp = new NewPersonPage(); npp.addNewPerson(title,
+		 * firstname, lastname, tags, phonenumber, emailaddresses);
 		 */
 		
-		System.out.println(pop.verifyPersonAdded(firstname));
+		 pop.verifyPersonAdded("QA", "Test1");
+		 
+		
+		
 	}
 	
 	//@Test

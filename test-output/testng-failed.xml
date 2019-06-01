@@ -6,7 +6,8 @@
       <class name="com.capsulecrm.qa.testcases.AddPerson_Test">
         <methods>
           <include name="setUp"/>
-          <include name="addNewPerson"/>
+          <include name="tearDown"/>
+          <include name="addNewPerson" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.capsulecrm.qa.testcases.AddPerson_Test -->
     </classes>

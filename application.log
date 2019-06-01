@@ -1,12 +1,7 @@
-2019-06-01 19:25:48,021  INFO [main] AddPerson_Test:33 - Initialized Driver
-2019-06-01 19:25:48,035  INFO [main] AddPerson_Test:35 - Initialized Login Page
-2019-06-01 19:25:50,566  INFO [main] AddPerson_Test:37 - Logged In successfully
-2019-06-01 19:25:50,570  INFO [main] AddPerson_Test:39 - Initialized Home page
-2019-06-01 19:25:50,711  INFO [main] AddPerson_Test:53 - Click on People Icons
-2019-06-01 19:25:51,323  INFO [main] AddPerson_Test:56 - Validate People and Organisations page
-2019-06-01 19:55:55,371  INFO [main] AddPerson_Test:33 - Initialized Driver
-2019-06-01 19:55:55,386  INFO [main] AddPerson_Test:35 - Initialized Login Page
-2019-06-01 19:55:57,923  INFO [main] AddPerson_Test:37 - Logged In successfully
-2019-06-01 19:55:57,924  INFO [main] AddPerson_Test:39 - Initialized Home page
-2019-06-01 19:55:58,006  INFO [main] AddPerson_Test:53 - Click on People Icons
-2019-06-01 19:55:58,566  INFO [main] AddPerson_Test:56 - Validate People and Organisations page
+2019-06-02 01:39:16,731  INFO [main] AddPerson_Test:48 - Read Data Successfully
+2019-06-02 01:39:22,014  INFO [main] AddPerson_Test:35 - Initialized Driver
+2019-06-02 01:39:22,026  INFO [main] AddPerson_Test:37 - Initialized Login Page
+2019-06-02 01:39:24,332  INFO [main] AddPerson_Test:39 - Logged In successfully
+2019-06-02 01:39:24,336  INFO [main] AddPerson_Test:41 - Initialized Home page
+2019-06-02 01:39:24,500  INFO [main] AddPerson_Test:55 - Click on People Icons
+2019-06-02 01:39:25,103  INFO [main] AddPerson_Test:58 - Validate People and Organisations page
