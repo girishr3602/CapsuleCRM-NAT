@@ -1,7 +1,5 @@
-2019-06-02 01:39:16,731  INFO [main] AddPerson_Test:48 - Read Data Successfully
-2019-06-02 01:39:22,014  INFO [main] AddPerson_Test:35 - Initialized Driver
-2019-06-02 01:39:22,026  INFO [main] AddPerson_Test:37 - Initialized Login Page
-2019-06-02 01:39:24,332  INFO [main] AddPerson_Test:39 - Logged In successfully
-2019-06-02 01:39:24,336  INFO [main] AddPerson_Test:41 - Initialized Home page
-2019-06-02 01:39:24,500  INFO [main] AddPerson_Test:55 - Click on People Icons
-2019-06-02 01:39:25,103  INFO [main] AddPerson_Test:58 - Validate People and Organisations page
+2019-06-02 13:53:14,464  INFO [main] AddPerson_Test:59 - Test Case Data read successfully
+2019-06-02 13:53:19,389  INFO [main] AddPerson_Test:39 - Initialized Driver
+2019-06-02 13:53:19,404  INFO [main] AddPerson_Test:41 - Initialized Login Page
+2019-06-02 13:53:21,665  INFO [main] AddPerson_Test:43 - Logged In successfully
+2019-06-02 13:53:21,668  INFO [main] AddPerson_Test:45 - Initialized Home page

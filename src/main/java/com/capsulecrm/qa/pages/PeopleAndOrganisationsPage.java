@@ -47,24 +47,28 @@ public class PeopleAndOrganisationsPage extends TestBase {
 		return new NewPersonPage();
 	}
 	
-	public void verifyPersonAdded(String firstname, String lastname) {
+	public boolean verifyPersonAdded(String firstname, String lastname) {
 		//System.out.println(personnameList.size());
 		String personName = firstname + " " + lastname;
 		
 		Iterator <WebElement> nameIterator = personnameList.iterator();
 		
+		boolean bValue = false;
 		if(nameIterator.hasNext()) {
+			
 			for(int i=0; i<personnameList.size(); i++) {
 				nameIterator.next();
 				//System.out.println(personnameList.get(i).getText().contains(personName));
 				
 				if(personnameList.get(i).getText().contains(personName)) {
 					//System.out.println("Person Name Present");
+					bValue = true;
 					break;
 				}
 				
 			}
 		}
+		return bValue;
 		
 	}
 	

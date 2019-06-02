@@ -7,6 +7,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.capsulecrm.qa.base.TestBase;
+import com.capsulecrm.qa.pages.AddNewCasePage;
+import com.capsulecrm.qa.pages.CasesPage;
 import com.capsulecrm.qa.pages.HomePage;
 import com.capsulecrm.qa.pages.LoginPage;
 import com.capsulecrm.qa.pages.NewPersonPage;
@@ -21,6 +23,8 @@ public class AddPerson_Test extends TestBase{
 	HomePage hp;
 	PeopleAndOrganisationsPage pop;
 	NewPersonPage npp;
+	AddNewCasePage ancp;
+	CasesPage cp;
 	
 	Logger log = Logger.getLogger("AddPerson_Test");
 	
@@ -44,12 +48,20 @@ public class AddPerson_Test extends TestBase{
 	
 	@DataProvider
 	public Object[][] getNewUserData() {
-		Object data[][] = TestUtil.getTestData(prop.getProperty("sheetname"));
-		log.info("Read Data Successfully");
+		Object data[][] = TestUtil.getTestData(prop.getProperty("addPersonsheet"));
+		log.info("Person Data read Successfully");
 		return data;
 	}
 	
-	@Test (dataProvider = "getNewUserData")
+	@DataProvider
+	public Object[][] getNewCaseData(){
+		Object data[][] = TestUtil.getTestData(prop.getProperty("addNewCasesheet"));
+		log.info("Test Case Data read successfully");
+		return data;
+		
+	}
+	
+	//@Test (priority = 1, dataProvider = "getNewUserData")
 	public void addNewPerson(String title, String firstname, String lastname, String tags, String phonenumber, String emailaddresses) {
 		hp.clickOnPeopleAndOrganisations();
 		log.info("Click on People Icons");
@@ -63,27 +75,27 @@ public class AddPerson_Test extends TestBase{
 		 * pop.clickAddPerson(); npp = new NewPersonPage(); npp.addNewPerson(title,
 		 * firstname, lastname, tags, phonenumber, emailaddresses);
 		 */
-		
-		 pop.verifyPersonAdded("QA", "Test1");
+		//pop.verifyPersonAdded(firstname, lastname);
+		 Assert.assertTrue(pop.verifyPersonAdded("QA", "Test"));
 		 
-		
-		
 	}
 	
-	//@Test
-	public void getNewUserData1() {
-		Object data[][] = TestUtil.getTestData(prop.getProperty("sheetname"));
-		System.out.println(data.length);
-		System.out.println(data[0].length);
-		for(int i=1; i<data[0].length; i++) {
-			System.out.println(data[0][i]);
-		}
-		//System.out.println(data[2]);
+	@Test (priority = 2, dataProvider = "getNewCaseData")
+	public void addNewCase(String CaseRelatesTo, String Name, String Description, String Tags, String Track) {
+		hp.clickCases();
+		cp = new CasesPage();
+		cp.clickAddCaseButton();
+		
+		ancp = new AddNewCasePage();
+		ancp.addNewCase(CaseRelatesTo, Name, Description, Tags, Track);
 	}
+	
+	
+	
 		
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 	
 }
