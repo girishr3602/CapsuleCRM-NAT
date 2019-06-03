@@ -95,7 +95,7 @@ public class AddPerson_Test extends TestBase{
 		
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 	
 }

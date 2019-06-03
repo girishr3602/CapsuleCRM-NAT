@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9121" started-at="2019-06-02T08:23:14Z" finished-at="2019-06-02T08:23:23Z">
+  <suite name="Default suite" duration-ms="9533" started-at="2019-06-03T18:02:08Z" finished-at="2019-06-03T18:02:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9121" started-at="2019-06-02T08:23:14Z" finished-at="2019-06-02T08:23:23Z">
+    <test name="Default test" duration-ms="9533" started-at="2019-06-03T18:02:08Z" finished-at="2019-06-03T18:02:17Z">
       <class name="com.capsulecrm.qa.testcases.AddPerson_Test">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@71423665]" name="setUp" is-config="true" duration-ms="7198" started-at="2019-06-02T08:23:14Z" finished-at="2019-06-02T08:23:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@527740a2]" name="setUp" is-config="true" duration-ms="7530" started-at="2019-06-03T18:02:08Z" finished-at="2019-06-03T18:02:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addNewCase(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@71423665]" name="addNewCase" duration-ms="1556" started-at="2019-06-02T08:23:21Z" data-provider="getNewCaseData" finished-at="2019-06-02T08:23:23Z">
+        <test-method status="PASS" signature="addNewCase(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.capsulecrm.qa.testcases.AddPerson_Test@527740a2]" name="addNewCase" duration-ms="1622" started-at="2019-06-03T18:02:16Z" data-provider="getNewCaseData" finished-at="2019-06-03T18:02:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[QA Test]]>
+                <![CDATA[QA]]>
               </value>
             </param>
             <param index="1">
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@71423665]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-06-02T08:23:23Z" finished-at="2019-06-02T08:23:23Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.capsulecrm.qa.testcases.AddPerson_Test@527740a2]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-06-03T18:02:17Z" finished-at="2019-06-03T18:02:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

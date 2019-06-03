@@ -1,5 +1,5 @@
-2019-06-02 13:53:14,464  INFO [main] AddPerson_Test:59 - Test Case Data read successfully
-2019-06-02 13:53:19,389  INFO [main] AddPerson_Test:39 - Initialized Driver
-2019-06-02 13:53:19,404  INFO [main] AddPerson_Test:41 - Initialized Login Page
-2019-06-02 13:53:21,665  INFO [main] AddPerson_Test:43 - Logged In successfully
-2019-06-02 13:53:21,668  INFO [main] AddPerson_Test:45 - Initialized Home page
+2019-06-03 23:32:08,666  INFO [main] AddPerson_Test:59 - Test Case Data read successfully
+2019-06-03 23:32:13,744  INFO [main] AddPerson_Test:39 - Initialized Driver
+2019-06-03 23:32:13,759  INFO [main] AddPerson_Test:41 - Initialized Login Page
+2019-06-03 23:32:16,202  INFO [main] AddPerson_Test:43 - Logged In successfully
+2019-06-03 23:32:16,203  INFO [main] AddPerson_Test:45 - Initialized Home page
