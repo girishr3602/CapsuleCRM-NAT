@@ -60,4 +60,10 @@ public class HomePage extends TestBase {
 		return new PeopleAndOrganisationsPage();
 	}
 	
+	public CasesPage clickCases() {
+		cases.click();
+		return new CasesPage();
+		
+	}
+	
 }
