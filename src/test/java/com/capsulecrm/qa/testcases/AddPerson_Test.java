@@ -61,7 +61,7 @@ public class AddPerson_Test extends TestBase{
 		
 	}
 	
-	//@Test (priority = 1, dataProvider = "getNewUserData")
+	@Test (priority = 1, dataProvider = "getNewUserData")
 	public void addNewPerson(String title, String firstname, String lastname, String tags, String phonenumber, String emailaddresses) {
 		hp.clickOnPeopleAndOrganisations();
 		log.info("Click on People Icons");
@@ -95,7 +95,7 @@ public class AddPerson_Test extends TestBase{
 		
 	@AfterMethod
 	public void tearDown() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 }

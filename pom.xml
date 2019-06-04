@@ -16,6 +16,13 @@
 
   <dependencies>
 	
+	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>3.1.5</version>
+	</dependency>
+	
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
@@ -73,13 +80,20 @@
 	    <version>4.1.0</version>
 	</dependency>
 	  	
-	  	
   	<!-- https://mvnrepository.com/artifact/org.apache.poi/ooxml-schemas -->
 	<!-- <dependency>
 	    <groupId>org.apache.poi</groupId>
 	    <artifactId>ooxml-schemas</artifactId>
 	    <version>1.4</version>
 	</dependency> -->
+	
+	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<!-- <dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>4.0.9</version>
+	</dependency> -->
+		
 	  	
   </dependencies>
 </project>
